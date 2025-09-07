@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5262189908825715958
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7238006585946300538}
+  - component: {fileID: 6655398516016620233}
+  m_Layer: 6
+  m_Name: Rotate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7238006585946300538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262189908825715958}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0.0058303294, w: 0.999983}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5052255106500997523}
+  m_Father: {fileID: 2258612805255265903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.668}
+--- !u!114 &6655398516016620233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5262189908825715958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73dfe10b6e61e044799cff732310162c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationspeed: 5
+--- !u!1 &5587356697964100789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2258612805255265903}
+  - component: {fileID: 2975770171996596156}
+  - component: {fileID: 6713372260240403788}
+  - component: {fileID: 4137604939530705875}
+  m_Layer: 6
+  m_Name: Zebra
+  m_TagString: Zebra
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2258612805255265903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587356697964100789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 186.708, y: 44.007, z: 103.474}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7238006585946300538}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2975770171996596156
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587356697964100789}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.52230835, y: 1.2602876, z: 1.6294975}
+  m_Center: {x: 0.016101837, y: 0.6456205, z: 0.08713722}
+--- !u!195 &6713372260240403788
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587356697964100789}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.3
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.5
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &4137604939530705875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5587356697964100789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5753cc04b3e1cd45a165e3667246ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wanderDistance: 50
+  walkSpeed: 1
+  maxWalkTime: 6
+  idleTime: 3
+  runSpeed: 5
+  health: 10
+  detectRange: 10
+  escapeMaxDistance: 200
+--- !u!1001 &3284324357810154152
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7238006585946300538}
+    m_Modifications:
+    - target: {fileID: 3309293530400012586, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7470a2050a7ad8546a9e50f9bfe1b5c7, type: 2}
+    - target: {fileID: 6972316003887382913, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_Name
+      value: Zebra+motions Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6972316003887382913, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5478470040147704282}
+  m_SourcePrefab: {fileID: 100100000, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+--- !u!4 &5052255106500997523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7748853115327798075, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+  m_PrefabInstance: {fileID: 3284324357810154152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5572896592988826409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6972316003887382913, guid: 9c789fa3712448a4ea80586174ad5e3f, type: 3}
+  m_PrefabInstance: {fileID: 3284324357810154152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5478470040147704282
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5572896592988826409}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ad41681a218f624bbe627f899eb9c55, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
